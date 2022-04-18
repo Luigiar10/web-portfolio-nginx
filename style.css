@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --bg-color: #fff;
+    --main-color: #1572A1;
+    --color-font-main: #000;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Utilities */
+
+.button {
+    width: 6rem;
+    border: 0.1rem solid var(--main-color);
+    padding: 1.2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.button a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* Utilities */
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-main{
+    padding-left: 6rem;
+}
+
+.info-main h1, p {
+    font-size: 3rem;
+    color: var(--color-font-main);
+}
+
+.info-main h1 span {
+    color: var(--main-color);
+}
+
+@media (max-width: 1000px) {
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-main {
+        padding: 0;
+    }
+
+    .info-main span {
+        display: block;
+    }
+}
+
+main {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+    color: var(--bg-color);
+}
+
+.personal-info {
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.personal-info img {
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+    width: 300px;
+}
+
+.personal-info p {
+    width: 50%;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--bg-color);
+}
+
+@media (max-width: 1000px) {
+    .personal-info {
+        flex-direction: column-reverse;
+    }
+
+    .personal-info p {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.technologies h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.tools {
+    display: flex;
+    align-items: space;
+    justify-content: space-around;
+}
+
+.tool {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tool i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.tool p {
+    font-size: 1rem;
+}
