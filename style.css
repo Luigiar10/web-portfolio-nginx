@@ -8,6 +8,7 @@
 }
 
 html {
+    max-width: 100vw;
     scroll-behavior: smooth;
 }
 
@@ -74,9 +75,9 @@ header .know-more a {
 /* MAIN INFO (ABOUT) */
 
 #about {
-    /* height: 100vh; */
     background-color: var(--main-color);
-    padding: 2rem;
+    padding: 2rem 0;
+    overflow-x: hidden;
 }
 
 #about h2 {
@@ -89,7 +90,6 @@ header .know-more a {
 .about {
     display: flex;
     flex-direction: column;
-    height: 98%;
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
@@ -143,14 +143,34 @@ header .know-more a {
 }
 
 @media (max-width: 800px) {
+    .social-media {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .social{
+        margin-bottom: 1rem;
+    }
+
     .text {
         width: 80%;
+    }
+
+    .social a i {
+        font-size: 1.5rem;
+    }
+    
+    .social p {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 400px) {
     .text {
-        width: 95%;
+        width: 90%;
     }
 }
 
