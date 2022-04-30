@@ -153,6 +153,8 @@ header .know-more a {
 
     .social{
         margin-bottom: 1rem;
+        /* margin: 0 0 1rem 0; */
+        margin: 1rem .3rem;
     }
 
     .text {
@@ -175,3 +177,56 @@ header .know-more a {
 }
 
 /* END MAIN INFO (ABOUT) */
+
+/* CONTACT FORM */
+
+.contact-form h2 {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+
+.form {
+    text-align: center;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.group label {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.group input, textarea {
+    width: 20rem;
+    padding: .3rem;
+    font-size: 1rem;
+    border: 1px solid var(--main-color);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.group textarea {
+    resize: none;
+}
+
+form button {
+    width: 20rem;
+    padding: .3rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--main-color);
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+/* END CONTACT FORM */
