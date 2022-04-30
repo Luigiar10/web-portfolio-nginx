@@ -229,6 +229,7 @@ form button:hover {
 
 footer {
     background-color: #2b2929;
+    margin-bottom: 0;
 }
 
 .footer-main {
@@ -262,6 +263,7 @@ footer p {
     font-size: 1.2rem;
     text-align: center;
     color: var(--bg-color);
+    padding-bottom: .5rem;
 }
 
 @media (max-width: 800px) {
