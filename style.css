@@ -229,4 +229,14 @@ form button:hover {
     cursor: pointer;
 }
 
+@media (max-width: 800px) {
+    .group input, textarea {
+        width: 90vw;
+    }
+
+    form button {
+        width: 90vw;
+    }
+}
+
 /* END CONTACT FORM */
