@@ -206,6 +206,7 @@ form button {
     border: 1px solid var(--main-color);
     font-size: 1.4rem;
     color: var(--main-color);
+    margin-bottom: 2rem;
 }
 
 form button:hover {
@@ -223,3 +224,68 @@ form button:hover {
 }
 
 /* END CONTACT FORM */
+
+/* Footer */
+
+footer {
+    background-color: #2b2929;
+}
+
+.footer-main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.colum-one a, .column-two a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+.column-two a {
+    margin-bottom: .3rem;
+}
+
+.column-two a:last-child {
+    margin-bottom: 0;
+}
+
+footer p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+@media (max-width: 800px) {
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer p span {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-main {
+        flex-direction: column;
+    }
+
+    .colum-one {
+        margin-bottom: 2rem;
+    }
+
+    .column-two a {
+        text-align: center;
+    }
+}
+
+/* End Footer */
