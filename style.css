@@ -1,8 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --bg-color: #fff;
-    --main-color: #1572A1;
-    --color-font-main: #000;
     --font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    font-family: var(--font-family);
+    background-color: #414141;
+}
+
+main {
+    max-width: 140rem;
+    width: 90%;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        position: inherit;
+    }
+}
+
+main .name-and-image {
+    margin-top: 20rem;
+    position: relative;
+    background-image: url(https://previews.123rf.com/images/sevenozz/sevenozz1802/sevenozz180200057/95306220-hoja-cuadriculada-de-papel-cuadriculado-ilustraci%C3%B3n-de-papel-de-nota-perfecta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    min-height: 25rem;
+}
+
+main .name-and-image img {
+    position: absolute;
+    top: -50%;
+    width: 22rem;
+    border-radius: 50%;
+}
+
+main .name-and-image h1 {
+    margin-top: 10rem;
+    font-size: 8rem;
+    text-align: center;
+}
+
+main .name-and-image p {
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+main .information {
+    background-color: #222121;
+    min-height: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    main .information {
+        display: flex;
+        flex-direction: inherit;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+main .information .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+
+main .information .social-media img {
+    width: 8rem;
+}
+
+main .information .social-media p {
+    color: white;
+    font-size: 1.4rem;
 }
