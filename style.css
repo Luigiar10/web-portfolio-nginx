@@ -20,9 +20,22 @@ main {
     margin: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 76rem) {
     main {
         position: inherit;
+    }
+}
+
+@media (min-width: 140rem) {
+    main {
+        max-width: 140rem;
+        width: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
 }
 
