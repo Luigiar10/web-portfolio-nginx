@@ -35,6 +35,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	max-width: 140rem;
 }
 
 .image-main {
@@ -84,5 +85,11 @@ main h1 {
 @media (max-width: 370px) {
 	main {
 		padding: 1rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.image-main img {
+		width: 8%;
 	}
 }
