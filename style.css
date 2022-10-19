@@ -36,6 +36,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	max-width: 140rem;
+	max-height: 100vh;
 }
 
 .image-main {
@@ -54,7 +55,7 @@ body {
 main {
 	width: 90vw;
     border-top: 1px solid;
-    padding: 4rem;
+    padding: 3.4rem;
     border-bottom: 1px solid;
 }
 
