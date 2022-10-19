@@ -62,7 +62,11 @@ main h1 {
 }
 
 .social-media {
-	width: 90%;
+	width: 90%;	
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .social-media button {
@@ -77,9 +81,8 @@ main h1 {
 	text-decoration: none;
 }
 
-/* .social-media a {
-	text-decoration: none;
-	margin: 1.5rem 2rem;
-	padding: 1.5rem 2rem;
-	border: 1px solid white;
-} */
+@media (max-width: 370px) {
+	main {
+		padding: 1rem;
+	}
+}
